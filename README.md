@@ -18,24 +18,22 @@ If you use [HACS](https://hacs.xyz/) you can install and update this component.
 
 
 ## Configuration 
-Please be aware that the *app_key* and *secret_key* are necessary for this integration to function properly and must be obtained from Ecoflow. To acquire these credentials, reach out to Ecoflow support at support@ecoflow.com and they will assist you. 
+Please be aware that the `app_key` and `secret_key` are necessary for this integration to function properly and must be obtained from Ecoflow. To acquire these credentials, reach out to Ecoflow support at support@ecoflow.com and they will assist you. 
 
 Additionally, the serial number of your Ecoflow device can be found on the back of the device.
 
- Add the following to your `configuration.yaml` file:
+Add the following to your `configuration.yaml` file:
 
 ```yaml
 ecoflow_iot:
   app_key: 'APP_KEY'
   secret_key: 'SECRET_KEY'
   devices:
-    - name: Ecoflow Max
+    - name: Device name
       serial_number: 'SERIAL_NUMBER_1'
-    - name: Ecoflow Mini
-      serial_number: 'SERIAL_NUMBER_2'
 ```
 
-Sample configuration:
+Sample:
 
 ```yaml 
 
