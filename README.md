@@ -3,9 +3,9 @@
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/1454659/213213276-073f4356-0e05-419b-b38c-1c8e76b1f0cd.png">
 
 
-This integration allows you to monitor devices connected to the Ecoflow Power Stations using Home Assistant.
+This integration allows you to monitor Ecoflow Power Stations state using Home Assistant.
 
-It uses the Ecoflow REST API to retrieve data from the devices and make it available in Home Assistant.
+It uses the Ecoflow IoT REST API to retrieve data from the devices and make it available in Home Assistant.
 
 
 ## Warning
@@ -25,12 +25,11 @@ If you use [HACS](https://hacs.xyz/) you can install and update this component.
 
 ## Configuration 
 
-It is important to note that the APP_KEY and SECRET_KEY required for this integration to work need to be obtained from Ecoflow.
+It is important to note that the *app_key* and *secret_key* required for this integration to work need to be obtained from Ecoflow.
 
-To get your APP_KEY and SECRET_KEY, please contact Ecoflow support at support@ecoflow.com. 
-They will provide you with the necessary credentials to use this integration. 
+To get your *app_key* and *secret_key*, please contact Ecoflow support at support@ecoflow.com. They will provide you with the necessary credentials to use this integration. 
 
-The serial number of your Ecoflow device is located on the back side of the device. It is a unique identifier that is used to identify your device when connecting to the Ecoflow API.
+The serial number of your Ecoflow device is located on the back side of the device. 
 
 Add the following to your configuration.yaml file:
 
