@@ -1,6 +1,6 @@
 """Ecoflow IoT"""
 import logging
-
+from datetime import timedelta
 import asyncio
 from homeassistant.const import CONF_NAME
 from aiohttp_requests import requests
@@ -11,6 +11,8 @@ except ImportError:
     from homeassistant.components.sensor import SensorDevice as SensorEntity
 
 import voluptuous as vol
+
+SCAN_INTERVAL = timedelta(minutes=1)
 
 _LOGGER = logging.getLogger(__name__)
 DOMAIN = "ecoflow_iot"
