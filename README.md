@@ -1,16 +1,12 @@
-# Ecoflow Power Stations Home Assistant Integration
+# Ecoflow Portable Power Station Integration for Home Assistant 
 
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/1454659/213213276-073f4356-0e05-419b-b38c-1c8e76b1f0cd.png">
 
+With this integration, you can keep track of your Ecoflow portable power station through Home Assistant by utilizing the official IoT cloud API. 
 
-This integration allows you to monitor Ecoflow power stations state using Home Assistant.
+⚠️ However, it should be noted that this integration doesn't provide control over the battery, such as the ability to turn it on/off or adjust the power level.
 
-It uses the Ecoflow IoT REST API to retrieve data from the devices and make it available in Home Assistant.
-
-
-## Warning
-
-This integration provides only basic information about Ecoflow devices and doesn't allow you to do any control like turn on or turn off sockets.
+ For more advanced functionality, you may want to consider using the hassio-ecoflow integration, which utilizes a local API, available at https://github.com/vwt12eh8/hassio-ecoflow.
 
 ## Installation
 
@@ -21,17 +17,25 @@ If you use [HACS](https://hacs.xyz/) you can install and update this component.
 2. Go to integration, search "ecoflow_iot" and click *Install*.
 
 
-
-
 ## Configuration 
+Please be aware that the *app_key* and *secret_key* are necessary for this integration to function properly and must be obtained from Ecoflow. To acquire these credentials, reach out to Ecoflow support at support@ecoflow.com and they will assist you. 
 
-It is important to note that the *app_key* and *secret_key* required for this integration to work need to be obtained from Ecoflow.
+Additionally, the serial number of your Ecoflow device can be found on the back of the device.
 
-To get your *app_key* and *secret_key*, please contact Ecoflow support at support@ecoflow.com. They will provide you with the necessary credentials to use this integration. 
+ Add the following to your `configuration.yaml` file:
 
-The serial number of your Ecoflow device is located on the back side of the device. 
+```yaml
+ecoflow_iot:
+  app_key: 'APP_KEY'
+  secret_key: 'SECRET_KEY'
+  devices:
+    - name: Ecoflow Max
+      serial_number: 'SERIAL_NUMBER_1'
+    - name: Ecoflow Mini
+      serial_number: 'SERIAL_NUMBER_2'
+```
 
-Here is example of configuration.yaml file:
+Sample configuration:
 
 ```yaml 
 
@@ -46,7 +50,6 @@ sensor:
         serial_number: 'R612DAD3AAC20292'
 ```
 
-Restart Home Assistant.
 
 
 
