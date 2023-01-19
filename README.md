@@ -2,7 +2,7 @@
 
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/1454659/213213276-073f4356-0e05-419b-b38c-1c8e76b1f0cd.png">
 
-With this integration, you can keep track of your Ecoflow portable power station through Home Assistant by utilizing the official IoT cloud API. 
+With this integration, you can keep track of your Ecoflow portable power stations through Home Assistant by utilizing the official IoT cloud API. 
 
 ⚠️ This integration doesn't provide control over the battery, such as the ability to turn it on/off or adjust the power level.
 
@@ -33,10 +33,8 @@ ecoflow_iot:
       serial_number: 'SERIAL_NUMBER_1'
 ```
 
-Sample:
-
+So it should look like the following:
 ```yaml 
-
 sensor:
   - platform: ecoflow_iot
     app_key: 'a8f5f167f44f4964e6c998dee827110c'  

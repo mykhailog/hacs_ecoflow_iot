@@ -1,7 +1,7 @@
 {
     "name": "Ecoflow IoT Integration",
     "domains": ["sensor"],
-    "description": "Integration that allows to monitor Ecoflow Power Stations state using Home Assistant",
+    "description": "Integration that allows to monitor Ecoflow power stations state using Home Assistant",
     "render_readme": true,
     "iot_class": ["Cloud Polling"]
   }

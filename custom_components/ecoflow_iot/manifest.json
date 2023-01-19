@@ -1,7 +1,7 @@
 {
   "domain": "ecoflow_iot",
   "name": "Ecoflow",
-  "description": "Integration for monitoring devices connected to the Ecoflow IoT platform",
+  "description": "Integration that allows to monitor Ecoflow power stations state using Home Assistant",
   "version": "1.0.1",
   "codeowners": ["@mykhailog"],
   "iot_class": "cloud_polling",
