@@ -1,0 +1,11 @@
+{
+  "domain": "ecoflow_iot",
+  "name": "Ecoflow",
+  "description": "Integration for monitoring devices connected to the Ecoflow IoT platform",
+  "version": "1.0.1",
+  "codeowners": ["@mykhailog"],
+  "iot_class": "cloud_polling",
+  "requirements": [
+      "aiohttp_requests==0.1.3"
+  ]
+}

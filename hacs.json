@@ -1,0 +1,7 @@
+{
+    "name": "Ecoflow IoT Integration",
+    "domains": ["sensor"],
+    "description": "Integration for monitoring devices connected to the Ecoflow IoT platform",
+    "render_readme": true,
+    "iot_class": ["Cloud Polling"]
+  }
