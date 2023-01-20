@@ -4,9 +4,7 @@
 
 With this integration, you can keep track of your Ecoflow portable power stations through Home Assistant by utilizing the official IoT cloud API. 
 
-⚠️ This integration doesn't provide control over the battery, such as the ability to turn it on/off or adjust the power level.
-
- For more advanced functionality, you may want to consider using the [hassio-ecoflow  integration](https://github.com/vwt12eh8/hassio-ecoflow), which utilizes a local API.
+⚠️ This integration doesn't provide control over the battery, such as the ability to turn it on/off or adjust the power level. For more advanced functionality, you may want to consider using the [hassio-ecoflow  integration](https://github.com/vwt12eh8/hassio-ecoflow), which utilizes a local API.
 
 ## Installation
 
